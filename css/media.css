@@ -1,0 +1,181 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+.banner--contact .banner__adress,
+.banner--contact .banner__phone{
+   display: flex;
+   justify-content: center;
+   
+}
+
+
+.language{
+   order: 2;
+   padding-left: 25px;
+}
+.social-media{
+   padding-left: 0;
+}
+
+.header__navigation {
+    padding: 0.9rem 1rem;
+
+}
+.hide{
+   display: none !important;
+   }
+
+.footer__nav nav .navbar-nav a {
+    color: var(--main-text);
+    font-size: 0.7rem;
+}
+
+.footer .chat{
+   position: absolute;
+   top: -25px;
+right: 1rem;
+}
+
+.footer__info {
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__info  p{
+   margin: 0;
+   padding: 0;
+}
+
+.info__phone a,
+.worktime p {
+   padding-bottom: 10px;
+}
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+.pagination .page-link{
+   width: 51px;
+   height: 41px;
+   font-size: 18px;
+   margin: 0 18px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+color: #c4c4c4;
+border: 1px solid #c4c4c4;
+cursor: pointer;
+}
+.hide{
+   display: flex !important;
+   }
+
+   .footer__nav nav .navbar-nav a {
+    font-size: 1rem;
+}
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+   .banner--contact .banner__adress,
+.banner--contact .banner__phone{
+   display: flex;
+   justify-content: start;
+   align-items: start;
+}
+
+.banner--contact{
+   padding-left: 5rem;
+}
+.banner--social{
+   padding-right: 5rem;
+}
+
+.language{
+   order: 0;
+   padding-left: 0px;
+}
+.social-media{
+   padding-left: 32px;
+}
+
+.footer .chat{
+   position: absolute;
+   top: -25px;
+right: 5rem;
+}
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+
+.banner--contact .banner__adress,
+.banner--contact .banner__phone{
+  align-items: center;
+}
+.banner__phone{
+   margin-top: 0;
+}
+
+.header__navigation {
+    padding: 0.9rem 5rem;
+
+}
+
+.footer__info {
+    flex-direction: row;
+}
+.info__phone a,
+.worktime p {
+   padding-bottom: 20px;
+}
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}

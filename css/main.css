@@ -1,0 +1,328 @@
+/* USER VARIABLES SECTION */
+
+:root {
+   /* colors */
+   --heave-blue: #083456;
+   --main-blue: #0F507A;
+	--accent-color: #BA9054;
+	--main-text: #ffffff;
+/* ==== */
+   --regular-text: 16px;
+	--lineheight: 1.65;
+	--main-font: cormorant-st, serif;
+	/* --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; */
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+.row, .row > * { --bs-gutter-y: 1.25rem; }
+
+ .container-fluid{
+    padding: 0;
+    margin: 0;
+ }
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/Cormorant/Cormorant-Regular.ttf") format("ttf"); font-family: "cormorant-st"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/Cormorant/Cormorant-Italic.ttf") format("ttf"); font-family: "cormorant-italic"; font-weight: 400; font-style: italic; }
+@font-face { src: url("../fonts/Cormorant/Cormorant-Bold.ttf") format("ttf"); font-family: "cormorant-bold"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/Cormorant/Cormorant-BoldItalic.ttf") format("ttf"); font-family: "cormorant-Ibold"; font-weight: 700; font-style: italic; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--main-font);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--main-text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.header{
+   background: var(--heave-blue);
+   padding: 1.125rem 5rem;
+   color: var(--main-text);
+}
+
+.icon-svg img{
+   width: 10px;
+   height: 20px;
+}
+.banner--contact, 
+.banner--social{
+    background: var(--heave-blue);
+    padding: 1.125rem 0;
+}
+
+
+
+.banner__adress > *{
+   padding: 0;
+   margin: 0;
+}
+
+.banner__adress{
+   color: var(--main-text);
+   display: flex;
+   align-items: center;
+}
+.banner__adress span{
+   display: inline-flex;
+}
+.banner__adress p{
+   padding-left: 5px;
+   margin: 0;
+   white-space: nowrap;
+}
+.banner__phone a{
+   color: var(--main-text);
+   text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.banner__phone a:hover{
+   color: whitesmoke;
+}
+
+.language select{
+   background: transparent;
+   border: none;
+   color: var(--main-text);
+}
+
+.social-media{
+   padding-left: 3.5rem;
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.social-media > a{
+   display: inline;
+   padding-left: 30px;
+}
+
+.header__navigation{
+   padding: 0.9rem 5rem;
+   box-shadow: 0 10px 20px rgba(10,10,10,0.1);
+}
+
+.header__navigation .nav-link{
+   text-transform: uppercase;
+   color: var(--heave-blue) !important;
+}
+.header__navigation .nav-link.current{
+   color: var(--accent-color) !important;
+   letter-spacing: 2px;
+}
+
+.header__navigation .btn{
+   color: var(--main-text);
+   background: var(--accent-color);
+
+   outline: none;
+   border: none;
+   
+   padding: 12px 40px;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+/* content */
+
+.content{
+   padding-top: 3.5rem;
+}
+
+.gallery__title{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.gallery__title h5{
+   color: var(--accent-color);
+}
+.gallery__title h1{
+   color: var(--heave-blue);
+   text-transform: uppercase;
+   font-size: 2.9rem;
+}
+.main__title{
+   position: relative;
+}
+.main__title::after{
+   content: "";
+position: absolute;
+width: 70px;
+height: 1px;
+background: var(--heave-blue);
+display: block;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+/* gal */
+
+.gallery{
+   padding-top: 54px;
+}
+.photo__container{
+   width: 100%;
+   height: 320px;
+   background-position: center !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   position: relative;
+
+}
+
+.photo-description{
+   background: var(--heave-blue);
+   padding: 11px 23px;
+   position: absolute;
+   width: 100%;
+   bottom: 0; 
+}
+
+.description__date,
+.description__name{
+   padding: 0;
+   margin: 0;
+}
+
+.description__name{
+   font-size: 1.125rem;
+}
+.description__date{
+display: flex;
+align-items: center;
+justify-content: end;
+font-size: 0.6rem;
+}
+
+.pagination{
+   padding-top: 6rem;
+   display: flex;
+   justify-content: center;
+}
+
+.pagination .page-link{
+   width: 38px;
+   height: 25px;
+   font-size: 14px;
+   margin: 0 14px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+color: #c4c4c4;
+border: 1px solid #c4c4c4;
+cursor: pointer;
+}
+
+.pagination .page-link:hover{
+   background: transparent;
+}
+.pagination .page-link.current{
+   border: none;
+   color: var(--accent-color);
+   border:  1px solid var(--accent-color);
+   cursor: default;
+}
+
+.pagination .arrows{
+   padding: 0 35px;
+   cursor: pointer;
+}
+
+.footer{
+   margin-top: 7.7rem;
+   background: var(--main-blue);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+}
+
+.footer__nav nav .navbar-nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 32px;
+   text-transform: uppercase;
+}
+.footer__nav nav .navbar-nav .nav-item{
+   margin-left: 30px;
+}
+.footer__nav nav .navbar-nav a{
+   color: var(--main-text);
+   font-size: 1rem;
+}
+
+.footer__social{
+   padding-top: 20px;
+}
+.footer__social .social-media{
+   justify-content: center;
+ }
+
+ .footer__social .social-media a{
+    padding: 0;
+    padding-right: 3rem;
+ }
+
+ .footer__info{
+    justify-content: center;
+    padding-top: 30px;
+ }
+
+ .footer__info .worktime,
+  .footer__info address,
+  .footer__info .info__phone{
+    display: flex;
+    padding-bottom: 0;
+    padding-left: 30px;
+ }
+
+  .footer__info .info__phone a{
+     color: var(--main-text);
+     text-decoration: none;
+  }
+
+  .footer__info .icon-svg {
+     padding-right: 5px;
+     
+  }
+   .footer__info .icon-svg img{
+     width: 18px;
+     height: 18px;
+   }
+
+   .footer__banner{
+      background: var(--heave-blue);
+      padding: 12px 5rem;
+   }
+
+   .footer__banner--partners{
+   display: flex;
+justify-content: flex-end;
+   }
+
+    .footer__banner--partners img{
+       padding-left: 5px;
+
+    }
