@@ -117,13 +117,9 @@ cursor: pointer;
    align-items: start;
 }
 
-.banner--contact{
-   padding-left: 5rem;
+.header__banner{
+   padding: 1.125rem 5rem;
 }
-.banner--social{
-   padding-right: 5rem;
-}
-
 .language{
    order: 0;
    padding-left: 0px;

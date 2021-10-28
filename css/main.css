@@ -78,9 +78,8 @@ body {
 	overflow-x: hidden;
 }
 
-.header{
+.header__banner{
    background: var(--heave-blue);
-   padding: 1.125rem 5rem;
    color: var(--main-text);
 }
 
@@ -91,7 +90,6 @@ body {
 .banner--contact, 
 .banner--social{
     background: var(--heave-blue);
-    padding: 1.125rem 0;
 }
 
 
